@@ -145,3 +145,34 @@ button:hover{
 .boxInd{
     padding-left: 80px;
 }
+
+/* Index */
+.foodEx{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "col1 col2";
+    width:100%; 
+    justify-items:center;
+}
+
+
+.foodCol1{
+    grid-area: col1;    
+    color: #e99700;
+}
+
+.foodCol2{
+    grid-area: col2;   
+    color: #e99700;
+}
+
+.partSched{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-auto-flow: column;
+    width:100%;                  
+}
+/*.partSched>div{
+    border: 1px solid;
+}*/
