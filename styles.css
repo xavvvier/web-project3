@@ -145,3 +145,26 @@ blockquote:after {
 }
 
 /* Registration form */
+textarea{
+    resize:none;
+}
+
+button{
+    background-color: #03b2fd;
+    color: white;
+    border: none;
+    border-radius: 14px 14px 14px 14px;
+    box-shadow: 1px 1px 2px grey;
+    font-size: 18px;
+    height: 25px;
+    width: 75px;
+    text-align: center;
+}
+button:hover{
+    background-color: #0384fd;
+    box-shadow: 2px 2px 3px black;
+}
+
+.boxInd{
+    padding-left: 80px;
+}
