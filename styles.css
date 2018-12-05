@@ -63,3 +63,17 @@ nav ol li a[href="#"] {
 
 
 /* Registration form */
+textarea{
+    resize:none;
+}
+
+button{
+    background-color: #03b2fd;
+    border: none;
+    border-radius: 14px 14px 14px 14px;
+    box-shadow: 1px 1px 2px grey;
+    font-size: 18px;
+
+.boxInd{
+    padding-left: 80px;
+}

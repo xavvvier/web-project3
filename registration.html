@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Celebrate Multiculturalism - 2018</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav>
+		<ol>
+			<li>
+                <a href="index.html">Home</a>
+            </li>
+			<li>
+                <a href="recipes.html">Recipes</a>
+            </li>
+			<li>
+                <a href="about-us.html">About Us</a>
+            </li>
+			<li>
+                <a href="#">Registration</a>
+            </li>
+			<li>
+                <a href="contact-us.html">Contact Us</a>
+            </li>
+		</ol>
+	</nav>
+     <div class="content">
+        <h1>Celebrate Multiculturalism 2018</h1>
+        <h2>Participant Registration form</h2>
+        
+        <form method="post" action="http://matt.nscctruro.ca/handler.php">
+            <p>
+                <label for="groupName">Group Name:</label>
+                <input type="text" name="Group_Name" id="groupName" size="80" maxlength="80">
+            </p>
+            <p>
+                <label for="contactName">Name of Contact Person:</label>
+                <input type="text" name="Contact_Name" id="contactName" size="60" maxlength="60">
+            </p>
+            <p>   
+                <label for="hPhone">Home Phone : </label>
+                <input type="tel" name="Home_Phone" id="hPhone" size="20" maxlength="20">
+                <label for="wPhone">Work Phone : </label>
+                <input type="tel" name="Work_Phone" id="wPhone" size="20" maxlength="20">  
+            </p> 
+            <p>
+                <label for="address">Address:</label><br>
+                <textarea name="Address" id="address" cols="100" rows="2"></textarea>
+            </p>
+            <p>
+                <label for="groupDesc">Group Description:</label><br>
+                <textarea name="Group_Description" id="groupDesc" cols="100" rows="3"></textarea>
+            </p>        
+            <p>
+                Date(s) and Time(s) interested in participating:<br>
+                <span style = "padding-left:20px">Available times:</span>
+                <div class = "boxInd">
+                    <input type="checkbox" name="Aug_10" value="Availble" id="avail_0">
+                    <label for="avail_0">August 10th:  7 pm– 10 pm</label><br />
+                    <input type="checkbox" name="Aug_11" value="Availble" id="avail_1">
+                    <label for="avail_1">August 11th: 12 pm – 10 pm</label><br />
+                    <input type="checkbox" name="Aug_12" value="Availble" id="avail_2">
+                    <label for="avail_2">August 12th: 12 pm – 10 pm</label><br />
+                    <input type="checkbox" name="Aug_13" value="Availble" id="avail_3">
+                    <label for="avail_3">August 13th: 1 pm – 5 pm</label><br />
+                    <input type="checkbox" name="Aug_14" value="Availble" id="avail_4">
+                    <label for="avail_4">August 14th: 1pm – 3 pm </label><br />                
+                </div>
+            </p>
+            <p>
+                <label for="specCons">Special Considerations/Equipment Needed:</label><br>
+                <textarea name="Spec_Considerations" id="specCons" cols="100" rows="4"></textarea>
+            </p>   
+            <p>
+                <button type="submit" name="submitButt">Submit</button>
+                <button type="reset" name="resetButt">Reset</button>   
+            </p> 
+        </form>      
+     </div>
+</body>
+</html>
