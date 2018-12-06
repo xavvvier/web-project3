@@ -14,7 +14,7 @@ body{
 }
 
 nav ol, .content{
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -61,6 +61,20 @@ nav ol li a[href="#"] {
     border-bottom: 3px solid #0160ee;
 }
 
+@media (max-width: 500px){
+    
+    nav ol li a[href="#"] {
+        border-bottom-width: 0;
+        border-left: 8px solid #0160ee;
+    }
+    nav ol li{
+        display: block;
+    }
+    nav ol li:last-of-type{
+        float: inherit;
+    }
+
+}
 /*Time badge*/
 .dates{
     display: grid;
