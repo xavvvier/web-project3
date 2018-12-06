@@ -178,6 +178,17 @@ button:hover{
     justify-items:center;
 }
 
+@media(max-width: 450px){
+    nav ol, .content{
+        width: 90%;
+    }
+    .foodEx{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "col1 "
+            "col2";
+    }   
+}
 
 .foodCol1{
     grid-area: col1;    
