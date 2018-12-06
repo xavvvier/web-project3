@@ -74,7 +74,7 @@ nav ol li a[href="#"] {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-time.icon
+.date-icon
 {
     margin: 10px auto;
     font-size: 1em;
@@ -87,7 +87,7 @@ time.icon
     box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
     overflow: hidden;
 }
-time.icon *
+.date-icon *
 {
     display: block;
     width: 100%;
@@ -96,7 +96,7 @@ time.icon *
     font-style: normal;
     text-align: center;
 }
-time.icon strong
+.date-icon strong
 {
     position: absolute;
     top: 0;
@@ -106,26 +106,27 @@ time.icon strong
     border-bottom: 1px dashed #0384fd ;
     box-shadow: 0 2px 0 #041d35a6;
 }
-time.icon em
+.date-icon em
 {
     position: absolute;
     bottom: 0.3em;
     color: #03b2fd;
 }
-time.icon em.day{
+.date-icon em.day{
     bottom: 1.2em;
 }
-time.icon em.time{
+.date-icon em.time{
     font-size: 0.7em;
     color: darkgray;
 }
-time.icon span
+.date-icon span
 {
     font-size: 2.8em;
     letter-spacing: -0.05em;
     padding-top: 0.8em;
     color: #2f2f2f;
 }
+
 
 /* blockquotes */
 blockquote {
@@ -151,6 +152,15 @@ blockquote:after {
 .other-recipes{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+img {
+    float: right;
+    width: 400px;
+    height: 200px;
+}
+.ingredients {
+    display: grid;
+    grid-template-columns: 35% 60%;
 }
 
 /* Registration form */
@@ -228,6 +238,12 @@ td.tRight{
 
 
 /* Responsive*/
+
+@media(max-width: 680px){
+    .dates {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 @media (max-width: 520px){
     .content {
