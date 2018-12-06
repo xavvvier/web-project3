@@ -53,7 +53,7 @@ nav ol li a{
 }
 
 nav ol li a:hover{
-    background-color: #029ddf;
+    background-color: darkblue;
 }
 
 nav ol li a[href="#"] {
@@ -143,6 +143,15 @@ blockquote:after {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+img {
+    float: right;
+    width: 400px;
+    height: 200px;
+}
+.ingredients {
+    display: grid;
+    grid-template-columns: 35% 60%;
+}
 
 /* Registration form */
 textarea{
@@ -181,7 +190,7 @@ button:hover{
 
 .foodCol1{
     grid-area: col1;    
-    color: #e99700;
+    color: #03b2fd;
 }
 
 .foodCol2{
