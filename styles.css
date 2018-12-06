@@ -62,7 +62,7 @@ nav ol li a{
 }
 
 nav ol li a:hover{
-    background-color: #029ddf;
+    background-color: darkblue;
 }
 
 nav ol li a[href="#"] {
@@ -122,15 +122,15 @@ time.icon strong
     top: 0;
     padding: 0.4em 0;
     color: #fff;
-    background-color: #d10000 ;
-    border-bottom: 1px dashed #7d0b0b ;
-    box-shadow: 0 2px 0 #7b3737;
+    background-color: #0384fd ;
+    border-bottom: 1px dashed #0384fd ;
+    box-shadow: 0 2px 0 #041d35a6;
 }
 time.icon em
 {
     position: absolute;
     bottom: 0.3em;
-    color: #d10000;
+    color: #03b2fd;
 }
 time.icon em.day{
     bottom: 1.2em;
@@ -190,7 +190,7 @@ button{
     text-align: center;
 }
 button:hover{
-    background-color: #0384fd;
+    background-color: darkblue;
     box-shadow: 2px 2px 3px black;
 }
 
@@ -222,14 +222,14 @@ button:hover{
 
 .foodCol1{
     grid-area: col1;    
-    color: #e99700;
+    color: #03b2fd;
     width: 100%;
     text-align: center;
 }
 
 .foodCol2{
     grid-area: col2;   
-    color: #e99700;
+    color: #03b2fd;
     width: 100%;
     text-align: center;
 }
@@ -243,5 +243,6 @@ button:hover{
     grid-auto-flow: column;
     width:100%; 
     border-radius: 25px;
-    background-color: #e99700;                 
+    background-color: #03b2fd; 
+    color: white;                
 }
