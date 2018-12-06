@@ -155,8 +155,9 @@ blockquote:after {
 }
 img {
     float: right;
-    width: 400px;
-    height: 200px;
+    /*width: 400px;
+    height: 200px;*/
+    max-width: 100%;
 }
 .ingredients {
     display: grid;
