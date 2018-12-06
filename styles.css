@@ -181,8 +181,8 @@ blockquote:after {
 }
 img {
     float: right;
-    width: 400px;
-    height: 200px;
+    width: 100%;
+   
 }
 .ingredients {
     display: grid;
@@ -237,6 +237,14 @@ button:hover{
     .dates {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+@media(max-width: 800px){
+    .ingredients {
+        grid-template-columns: 1fr;
+        align-content: center;
+    } 
+
 }
 
 .foodCol1{
