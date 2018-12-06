@@ -3,7 +3,6 @@
 
 *{
     box-sizing: border-box;
-
 }
 
 body{
@@ -199,8 +198,6 @@ td.tRight{
     margin-left:auto;
     margin-right: auto;
 }
-
-
 
 /* Index */
 .foodEx{
