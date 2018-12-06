@@ -25,6 +25,9 @@ nav ol, .content{
 
 .content{
     margin-bottom: 5em;
+    padding: 5px;
+    display: grid;
+    grid-template: 1fr;
 }
 
 
@@ -67,7 +70,9 @@ nav ol li a[href="#"] {
 }
 
 @media (max-width: 500px){
-    
+    .content {
+        max-width: 95%;
+    }
     nav {
         position: relative;
     }
@@ -202,10 +207,11 @@ button:hover{
     justify-items:center;
 }
 
-@media(max-width: 450px){
+@media(max-width: 500px){
     nav ol, .content{
-        width: 90%;
+        max-width: 95%;
     }
+
     .foodEx{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -217,16 +223,20 @@ button:hover{
 .foodCol1{
     grid-area: col1;    
     color: #e99700;
+    width: 100%;
+    text-align: center;
 }
 
 .foodCol2{
     grid-area: col2;   
     color: #e99700;
+    width: 100%;
+    text-align: center;
 }
 
 .partSched{
-    padding-left: 60px;
-    padding-top: 15px;
+    padding-left: 5%;
+    padding-top: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     grid-template-rows: repeat(10, 1fr);
