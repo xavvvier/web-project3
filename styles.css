@@ -1,4 +1,5 @@
 /*Global styles*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 *{
     box-sizing: border-box;
@@ -6,15 +7,19 @@
 }
 
 body{
-    font-family: Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, sans-serif;
     font-size: 18px;
     color: darkblue;
     padding: 0;
     margin: 0;
 }
 
+p{
+    text-align: justify;
+}
+
 nav ol, .content{
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -61,6 +66,24 @@ nav ol li a[href="#"] {
     border-bottom: 3px solid #0160ee;
 }
 
+@media (max-width: 500px){
+    
+    nav {
+        position: relative;
+    }
+
+    nav ol li a[href="#"] {
+        border-bottom-width: 0;
+        border-left: 8px solid #0160ee;
+    }
+    nav ol li{
+        display: block;
+    }
+    nav ol li:last-of-type{
+        float: inherit;
+    }
+    
+}
 /*Time badge*/
 .dates{
     display: grid;
