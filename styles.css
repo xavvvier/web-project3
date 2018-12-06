@@ -1,24 +1,33 @@
 /*Global styles*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 *{
     box-sizing: border-box;
+
 }
 
 body{
-    font-family: Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, sans-serif;
     font-size: 18px;
     color: darkblue;
     padding: 0;
     margin: 0;
 }
 
+p{
+    text-align: justify;
+}
+
 nav ol, .content{
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .content{
     margin-bottom: 5em;
+    padding: 5px;
+    display: grid;
+    grid-template: 1fr;
 }
 
 
@@ -60,12 +69,32 @@ nav ol li a[href="#"] {
     border-bottom: 3px solid #0160ee;
 }
 
+@media (max-width: 500px){
+    .content {
+        max-width: 95%;
+    }
+    nav {
+        position: relative;
+    }
+
+    nav ol li a[href="#"] {
+        border-bottom-width: 0;
+        border-left: 8px solid #0160ee;
+    }
+    nav ol li{
+        display: block;
+    }
+    nav ol li:last-of-type{
+        float: inherit;
+    }
+    
+}
 /*Time badge*/
 .dates{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-time.icon
+.date-icon
 {
     margin: 10px auto;
     font-size: 1em;
@@ -78,7 +107,7 @@ time.icon
     box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
     overflow: hidden;
 }
-time.icon *
+.date-icon *
 {
     display: block;
     width: 100%;
@@ -87,35 +116,42 @@ time.icon *
     font-style: normal;
     text-align: center;
 }
-time.icon strong
+.date-icon strong
 {
     position: absolute;
     top: 0;
     padding: 0.4em 0;
     color: #fff;
-    background-color: #d10000 ;
-    border-bottom: 1px dashed #7d0b0b ;
-    box-shadow: 0 2px 0 #7b3737;
+    background-color: #0384fd ;
+    border-bottom: 1px dashed #0384fd ;
+    box-shadow: 0 2px 0 #041d35a6;
 }
-time.icon em
+.date-icon em
 {
     position: absolute;
     bottom: 0.3em;
-    color: #d10000;
+    color: #03b2fd;
 }
-time.icon em.day{
+.date-icon em.day{
     bottom: 1.2em;
 }
-time.icon em.time{
+.date-icon em.time{
     font-size: 0.7em;
     color: darkgray;
 }
-time.icon span
+.date-icon span
 {
     font-size: 2.8em;
     letter-spacing: -0.05em;
     padding-top: 0.8em;
     color: #2f2f2f;
+}
+
+
+@media(max-width: 680px){
+    .dates {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* blockquotes */
@@ -170,7 +206,7 @@ button{
     text-align: center;
 }
 button:hover{
-    background-color: #0384fd;
+    background-color: darkblue;
     box-shadow: 2px 2px 3px black;
 }
 
@@ -187,25 +223,45 @@ button:hover{
     justify-items:center;
 }
 
+@media(max-width: 500px){
+    nav ol, .content{
+        max-width: 95%;
+    }
+
+    .foodEx{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "col1 "
+            "col2";
+    }   
+    .dates {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 .foodCol1{
     grid-area: col1;    
     color: #03b2fd;
+    width: 100%;
+    text-align: center;
 }
 
 .foodCol2{
     grid-area: col2;   
-    color: #e99700;
+    color: #03b2fd;
+    width: 100%;
+    text-align: center;
 }
 
 .partSched{
-    padding-left: 60px;
-    padding-top: 15px;
+    padding-left: 5%;
+    padding-top: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     grid-template-rows: repeat(10, 1fr);
     grid-auto-flow: column;
     width:100%; 
     border-radius: 25px;
-    background-color: #e99700;                 
+    background-color: #03b2fd; 
+    color: white;                
 }
