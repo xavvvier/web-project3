@@ -103,8 +103,8 @@ nav ol li a[href="#"] {
     padding: 0.4em 0;
     color: #fff;
     background-color: #0384fd ;
-    border-bottom: 1px dashed #0384fd ;
-    box-shadow: 0 2px 0 #041d35a6;
+    border-bottom: 1px dashed #0384ff ;
+    box-shadow: 0 2px 0 #041d35;
 }
 .date-icon em
 {
