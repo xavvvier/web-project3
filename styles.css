@@ -1,11 +1,12 @@
 /*Global styles*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 *{
     box-sizing: border-box;
 }
 
 body{
-    font-family: Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, sans-serif;
     font-size: 18px;
     color: darkblue;
     padding: 0;
