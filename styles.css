@@ -69,26 +69,6 @@ nav ol li a[href="#"] {
     border-bottom: 3px solid #0160ee;
 }
 
-@media (max-width: 500px){
-    .content {
-        max-width: 95%;
-    }
-    nav {
-        position: relative;
-    }
-
-    nav ol li a[href="#"] {
-        border-bottom-width: 0;
-        border-left: 8px solid #0160ee;
-    }
-    nav ol li{
-        display: block;
-    }
-    nav ol li:last-of-type{
-        float: inherit;
-    }
-    
-}
 /*Time badge*/
 .dates{
     display: grid;
@@ -177,11 +157,10 @@ blockquote:after {
 textarea{
     resize:none;
 }
-
 button{
     background-color: #03b2fd;
     color: white;
-    border: none;
+    border: 1px solid darkblue;
     border-radius: 14px 14px 14px 14px;
     box-shadow: 1px 1px 2px grey;
     font-size: 18px;
@@ -193,10 +172,26 @@ button:hover{
     background-color: darkblue;
     box-shadow: 2px 2px 3px black;
 }
-
 .boxInd{
     padding-left: 80px;
 }
+td.tRight{
+    text-align: right;
+}
+.fStyle{
+    border: 1px solid darkblue;
+    background-color: rgba(3, 178, 253, 0.4);
+    border-radius: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 5px 10px 5px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
 
 /* Index */
 .foodEx{
@@ -206,34 +201,18 @@ button:hover{
     width:100%; 
     justify-items:center;
 }
-
-@media(max-width: 500px){
-    nav ol, .content{
-        max-width: 95%;
-    }
-
-    .foodEx{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "col1 "
-            "col2";
-    }   
-}
-
 .foodCol1{
     grid-area: col1;    
-    color: #03b2fd;
+    color: #0699d8;
     width: 100%;
     text-align: center;
 }
-
 .foodCol2{
     grid-area: col2;   
-    color: #03b2fd;
+    color: #0699d8;
     width: 100%;
     text-align: center;
 }
-
 .partSched{
     padding-left: 5%;
     padding-top: 2%;
@@ -243,6 +222,35 @@ button:hover{
     grid-auto-flow: column;
     width:100%; 
     border-radius: 25px;
-    background-color: #03b2fd; 
-    color: white;                
+    border: 1px solid darkblue;
+    background-color: rgba(3, 178, 253, 0.4);
+}
+
+
+/* Responsive*/
+
+@media (max-width: 520px){
+    .content {
+        max-width: 95%;
+    }
+    nav {
+        position: relative;
+    }
+
+    nav ol li a[href="#"] {
+        border-bottom-width: 0;
+        border-left: 8px solid #0160ee;
+    }
+    nav ol li{
+        display: block;
+    }
+    nav ol li:last-of-type{
+        float: inherit;
+    }  
+    .foodEx{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "col1 "
+            "col2";
+    }     
 }
